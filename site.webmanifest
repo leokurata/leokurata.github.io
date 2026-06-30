@@ -1,0 +1,11 @@
+{
+  "name": "Your Name — Researcher",
+  "short_name": "Your Name",
+  "start_url": ".",
+  "display": "browser",
+  "background_color": "#FAFAF7",
+  "theme_color": "#FAFAF7",
+  "icons": [
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
