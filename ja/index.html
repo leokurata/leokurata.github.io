@@ -40,19 +40,19 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "倉田怜於",
-  "alternateName": "Your Name",
+  "alternateName": "Leo Kurata",
   "url": "https://leokurata.github.io/ja/",
   "image": "https://leokurata.github.io/assets/img/profile.svg",
   "jobTitle": "博士後期課程研究者",
-  "affiliation": { "@type": "Organization", "name": "大学名" },
+  "affiliation": { "@type": "Organization", "name": "Waseda University" },
   "alumniOf": [
     { "@type": "CollegeOrUniversity", "name": "Waseda University" }
   ],
-  "knowsAbout": ["研究テーマ1", "研究テーマ2", "研究テーマ3"],
+  "knowsAbout": ["社会的選択理論", "選好集計", "社会的厚生基準", "分配的正義"],
   "sameAs": [
-    "https://scholar.google.com/citations?user=XXXXXXXX",
-    "https://orcid.org/0000-0000-0000-0000",
-    "https://github.com/your-username"
+    "https://scholar.google.com/citations?user=sTJPGb0AAAAJ",
+    "https://orcid.org/0009-0009-4028-8647",
+    "https://github.com/leokurata"
   ]
 }
 </script>
@@ -90,6 +90,7 @@
     <a href="#research">研究</a>
     <a href="#publications">論文</a>
     <a href="#working">WP</a>
+    <a href="#presentations">発表</a>
     <a href="#teaching">教育</a>
     <a href="#contact">連絡先</a>
   </nav>
@@ -116,6 +117,7 @@
         <li><a href="#research">研究</a></li>
         <li><a href="#publications">論文</a></li>
         <li><a href="#working">ワーキングペーパー</a></li>
+        <li><a href="#presentations">発表</a></li>
         <li><a href="#teaching">教育</a></li>
         <li><a href="#contact">連絡先</a></li>
       </ul>
@@ -140,14 +142,12 @@
     <section id="about" class="reveal">
       <p class="eyebrow">概要</p>
       <p class="lede">
-        博士後期課程（早稲田大学）に在籍。
+        博士後期課程（早稲田大学）に在籍。日本学術振興会 DC1 (2025–)。
         <em>社会的選択理論</em>の研究をしています。
       </p>
       <div class="prose">
         <p>
-          人々の対立する利害とそこから得るウェルビーイングをどのように社会が集計すべきか？ということに関心があります。
-          意思決定理論における最新の知見（例：リスクや不確実性を考慮した意思決定）や分配的正義に関する議論（例：効用の個人間比較可能性、人口倫理）を
-          古典的なテーマに取り入れることで、数学的・哲学的に新しい発見をすることを目指しています。
+          
         </p>
         <!-- <p>
           早稲田大学に進学する前は［以前の所属］で［テーマ］を学びました。
@@ -195,9 +195,9 @@
       <h2 class="h">研究関心</h2>
       <div class="prose">
         <p>
-          私の研究は社会的選択理論と規範理論の境界に位置しています。とりわけ
-          ［具体的な問い］に関心があり、［手法・枠組み］を通じてその解明を
-          目指しています。
+          人々の対立する利害とそこでのウェルビーイングをどのように社会が集計すべきか？ということに関心があります。
+          意思決定理論における最新の知見（例：リスクや不確実性を考慮した意思決定）や分配的正義に関する議論（例：効用の個人間比較可能性、人口倫理）を
+          古典的なテーマに取り入れることで、数学的・哲学的に新しい発見をすることを目指しています。
         </p>
       </div>
 
@@ -223,7 +223,7 @@
     </section>
 
     <section id="publications" class="reveal">
-      <p class="eyebrow">主要論文</p>
+      <!-- <p class="eyebrow">主要論文</p>
       <ol class="pub-list">
         <li class="pub">
           <div class="pub-year">2025</div>
@@ -257,30 +257,164 @@
             </details>
           </div>
         </li>
-      </ol>
+      </ol> -->
     </section>
 
     <section id="working" class="reveal">
       <p class="eyebrow">ワーキングペーパー</p>
       <ol class="pub-list">
+
         <li class="pub">
-          <div class="pub-year">2026</div>
+          <div class="pub-year" style="color:var(--accent);font-weight:500">R&amp;R</div>
           <div>
-            <p class="pub-title">査読中のワーキングペーパー</p>
-            <p class="pub-meta">ジョブマーケットペーパー.</p>
-            <div class="links">
-              <a href="#">草稿（PDF）</a>
-              <a href="#">スライド</a>
-            </div>
+            <p class="pub-title">Collective decisions under uncertainty: efficiency, ex-ante fairness, and normalization</p>
+            <p class="pub-meta">共著：Kensei Nakamura ・ <em>Theoretical Economics</em></p>
+            <!-- EDIT: # を論文・SSRN・arXiv の URL に置き換えてください -->
+            <div class="links"><a href="#">PDF</a></div>
             <details class="abstract">
               <summary>要旨</summary>
-              <p class="abstract-body">［要旨］</p>
+              <p class="abstract-body">This paper studies preference aggregation under uncertainty in the multi-profile framework and characterizes a new class of aggregation rules that address classical concerns about Harsanyi’s (1955) utilitarian rules. Our aggregation rules, which we call <em>relative fair aggregation rules</em>, are grounded in three key ideas: utilitarianism, egalitarianism, and the 0–1 normalization of individual utilities. These rules are parameterized by a set of weight vectors over individuals and evaluate each ambiguous alternative by taking the minimum weighted sum of 0–1 normalized utility levels over the weight set. For the characterization, we propose two novel axioms—<em>weak preference for mixing</em> and <em>restricted certainty independence</em>—developed by using a new method of objectively randomizing outcomes within the Savagean setting. Additional results clarify how these axioms capture the utilitarian and egalitarian attitudes of the rules.</p>
             </details>
           </div>
         </li>
+
+        <li class="pub">
+          <div class="pub-year">査読中</div>
+          <div>
+            <p class="pub-title">Reservation of Judgment and Robust Collective Decisions</p>
+            <p class="pub-meta">共著：Kensei Nakamura</p>
+            <div class="links"><a href="#">PDF</a></div>
+            <details class="abstract">
+              <summary>要旨</summary>
+              <p class="abstract-body">This paper studies preference aggregation under ambiguity when agents have incomplete preference relations due to imprecise beliefs. We introduce the “dual” of the Pareto principle, which respects unanimity among individuals, including those with unexpressed opinions. Our first theorem shows that, in most cases, this principle leads to a dictatorial rule in taste aggregation. We argue that this stems from the problem of spurious unanimity, even when the individuals have the same prior set. By weakening the above principle to avoid respecting spurious unanimity, the second theorem characterizes novel belief-aggregation rules, under which society does not discard any combination of plausible priors.</p>
+            </details>
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-year"></div>
+          <div>
+            <p class="pub-title">Agreement with reservation of judgment under risk</p>
+            <p class="pub-meta">共著：Kensei Nakamura</p>
+            <div class="links"><a href="#">PDF</a></div>
+            <details class="abstract">
+              <summary>要旨</summary>
+              <p class="abstract-body">This paper studies preference aggregation under risk. In our model, each agent has an incomplete preference relation represented by a set of expected utility functions. The classical Pareto principle is silent on agreement involving indecisiveness. To examine the implications of respecting such agreement, we introduce the Paretian principle that can be applied when some individuals reserve their judgment. Our main result shows that, under this principle, for each combination of individuals’ utility functions, there exists a corresponding social utility function constructed as a weighted sum of the individual ones. These aggregation rules guarantee natural properties that the standard Pareto principle fails to ensure.</p>
+            </details>
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-year" style="color:var(--accent);font-weight:500">R&amp;R</div>
+          <div>
+            <p class="pub-title">A single-axiom cardinal characterisation of quadratic social welfare functions</p>
+            <p class="pub-meta"><em>Economics Letters</em></p>
+            <div class="links"><a href="#">PDF</a></div>
+            <details class="abstract">
+              <summary>要旨</summary>
+              <p class="abstract-body">Chambers and Echenique (in J Econ Theory 189:105086, 2020) characterised quadratic(-plus-linear) social welfare functions using Status Quo Independence and Eventual Linearity. We show that Status Quo Independence implies the latter condition at every status quo, making it redundant. Under continuity and normalisation, Status Quo Independence solely yields a unique quadratic-plus-linear decomposition: The proof separates the even and odd parts of the social welfare function into the parallelogram equation and Jensen's equation. Eventual Linearity alone is insufficient because it leaves the even component unrestricted.</p>
+            </details>
+          </div>
+        </li>
+
+        <li class="pub">
+          <div class="pub-year"></div>
+          <div>
+            <p class="pub-title">Inequality Averse Preferences: Payoff-Based Generalization and a New Axiomatization</p>
+            <p class="pub-meta">共著：Daijiro Kawanaka</p>
+          </div>
+        </li>
+
       </ol>
     </section>
 
+     <section id="presentations" class="reveal">
+      <p class="eyebrow">発表</p>
+
+      <h3 class="sub">2026年</h3>
+      <div class="edu">
+        <div class="edu-date">6/5 – 7</div>
+        <div>
+          <p class="edu-deg">2nd International Conference on Normative Economics and Philosophy</p>
+          <p class="edu-note">東京理科大学, JP ・ <em>Revisiting Quadratic Social Welfare Functions: a new reconciliation between equity and efficiency</em></p>
+        </div>
+      </div>
+      <div class="edu">
+        <div class="edu-date">6/13 – 16</div>
+        <div>
+          <p class="edu-deg">The 18th Meeting of the Society for Social Choice and Welfare</p>
+          <p class="edu-note">東京, JP ・ <em>Revisiting Quadratic Social Welfare Functions: a new reconciliation between equity and efficiency</em> ・ 採択</p>
+        </div>
+      </div>
+      <div class="edu">
+        <div class="edu-date">8/25 – 27</div>
+        <div>
+          <p class="edu-deg">Asian Game Theory Conference 2026</p>
+          <p class="edu-note">東京, JP ・ <em>Inequality Averse Preferences: Payoff-Based Generalization and a New Axiomatization</em> ・ 採択</p>
+        </div>
+      </div>
+
+      <h3 class="sub">2025年</h3>
+      <div class="edu">
+        <div class="edu-date">5/24 – 25</div>
+        <div>
+          <p class="edu-deg">日本経済学会 2025年度春季大会</p>
+          <p class="edu-note">中京大学, JP ・ ポスター発表</p>
+        </div>
+      </div>
+      <div class="edu">
+        <div class="edu-date">5/31 – 6/2</div>
+        <div>
+          <p class="edu-deg">1st International Conference on Normative Economics and Philosophy</p>
+          <p class="edu-note">東京理科大学, JP</p>
+        </div>
+      </div>
+      <div class="edu">
+        <div class="edu-date">6/23 – 25</div>
+        <div>
+          <p class="edu-deg">Conference on Economic Design 2025</p>
+          <p class="edu-note">エセックス大学, GB</p>
+        </div>
+      </div>
+      <div class="edu">
+        <div class="edu-date">7/22</div>
+        <div>
+          <p class="edu-deg">WINPEC Microeconomics Seminar</p>
+          <p class="edu-note">早稲田大学, JP</p>
+        </div>
+      </div>
+      <div class="edu">
+        <div class="edu-date">8/18 – 22</div>
+        <div>
+          <p class="edu-deg">Econometric Society World Congress 2025</p>
+          <p class="edu-note">ソウル, KR</p>
+        </div>
+      </div>
+
+      <h3 class="sub">2024年</h3>
+      <div class="edu">
+        <div class="edu-date">7/2 – 6</div>
+        <div>
+          <p class="edu-deg">The 17th Meeting of the Society for Social Choice and Welfare</p>
+          <p class="edu-note">パリ, FR</p>
+        </div>
+      </div>
+      <div class="edu">
+        <div class="edu-date">7/8 – 11</div>
+        <div>
+          <p class="edu-deg">Conference for Mechanism and Institution Design</p>
+          <p class="edu-note">コルヴィヌス大学, HU</p>
+        </div>
+      </div>
+      <div class="edu">
+        <div class="edu-date">8/26 – 30</div>
+        <div>
+          <p class="edu-deg">East Asia Game Theory</p>
+          <p class="edu-note">済州, KR</p>
+        </div>
+      </div>
+    </section>
+       
     <section id="teaching" class="reveal">
       <p class="eyebrow">教育</p>
       <div class="entry">
