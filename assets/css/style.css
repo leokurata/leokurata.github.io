@@ -210,6 +210,13 @@ section + section { margin-top: 64px; }
   margin: 0 0 1.1em;
 }
 .lede em { font-style: italic; color: var(--accent); }
+.lede { margin-bottom: 0.5em; }
+.lede-note {
+  font-size: 0.9rem;
+  color: var(--ink-3);
+  margin: 0 0 1.4em;
+  letter-spacing: 0.01em;
+}
 
 .prose p { margin: 0 0 1.05em; max-width: var(--measure); }
 .prose p:last-child { margin-bottom: 0; }
@@ -254,6 +261,7 @@ h3.sub {
   border-top: 1px solid var(--rule);
 }
 .pub:first-child { border-top: none; padding-top: 4px; }
+.pub > *, .edu > * { min-width: 0; }   /* allow grid columns to shrink/wrap instead of overflowing */
 
 .pub-year {
   font-family: var(--mono);
@@ -322,6 +330,33 @@ details.abstract > summary:hover { color: var(--accent); }
   color: var(--ink-2);
   line-height: 1.6;
   max-width: var(--measure);
+}
+
+/* education timeline */
+.edu {
+  display: grid;
+  grid-template-columns: 138px 1fr;
+  gap: 18px;
+  padding: 18px 0;
+  border-top: 1px solid var(--rule);
+}
+.edu:first-child { border-top: none; padding-top: 4px; }
+.edu-date {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--ink-3);
+  padding-top: 2px;
+}
+.edu-deg { font-weight: 600; font-size: 1.02rem; line-height: 1.42; margin: 0; color: var(--ink); }
+.edu-note { font-size: 0.92rem; color: var(--ink-2); margin: 5px 0 0; line-height: 1.55; }
+.edu-paper { font-size: 0.88rem; color: var(--ink-2); margin: 4px 0 0; line-height: 1.5; }
+.edu-paper .edu-paper-label {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  margin-right: 7px;
 }
 
 /* teaching / generic entries */
@@ -412,8 +447,11 @@ mjx-container { max-width: 100%; overflow-x: auto; overflow-y: hidden; }
 }
 
 @media (max-width: 460px) {
-  .pub { grid-template-columns: 1fr; gap: 4px; }
-  .pub-year { padding-top: 0; }
+  /* keep the two-column table on narrow screens (date/label left, content right) */
+  .pub { grid-template-columns: 46px 1fr; gap: 12px; }
+  .pub-year { padding-top: 2px; }
+  .edu { grid-template-columns: 84px 1fr; gap: 12px; }
+  .edu-date { padding-top: 2px; font-size: 0.72rem; }
 }
 
 /* =========================================================================
