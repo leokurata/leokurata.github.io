@@ -121,6 +121,15 @@ a:hover { color: var(--accent-2); text-decoration: underline; }
 }
 .rail-role span { color: var(--ink-3); }
 
+.rail-email {
+  font-family: var(--mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.01em;
+  color: var(--ink-2);
+  margin: 0;
+  word-break: break-word;
+}
+
 /* in-page nav */
 .nav { margin-top: 4px; }
 .nav ul { list-style: none; margin: 0; padding: 0; }
