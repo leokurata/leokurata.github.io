@@ -32,7 +32,7 @@ homepage/
 
 | 置換前 | 置換後の例 |
 | --- | --- |
-| `your-username.github.io` | 実際の公開 URL（例 `taro-yamada.github.io` または独自ドメイン） |
+| `leokurata.github.io` | 実際の公開 URL（例 `taro-yamada.github.io` または独自ドメイン） |
 | `Your Name` / `あなたの名前` | ご自身の氏名（英・和） |
 | `[field]` / `［専門分野］` | 専門分野（例 Econometrics / 計量経済学） |
 | `[University]` / `［大学名］` | 所属大学・研究科 |
