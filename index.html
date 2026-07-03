@@ -105,6 +105,7 @@
 <div class="topbar">
   <nav aria-label="Sections">
     <a href="#about">About</a>
+    <a href="#news">News</a>
     <a href="#research">Research</a>
     <a href="#publications">Publications</a>
     <a href="#working">Working&nbsp;papers</a>
@@ -135,6 +136,7 @@
     <nav class="nav" aria-label="On this page">
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#working">Working papers</a></li>
@@ -180,6 +182,13 @@
           [funding / fellowship], and I have presented at [venue].
         </p> -->
       </div>
+    </section>
+
+    <!-- NEWS -->
+    <section id="news" class="reveal">
+      <p class="eyebrow">News</p>
+      <div id="news-latest"></div>
+      <p class="more"><a href="news.html">Archive →</a></p>
     </section>
 
     <!-- RESEARCH -->
@@ -276,7 +285,7 @@
           <div>
             <p class="pub-title">Collective decisions under uncertainty: efficiency, ex-ante fairness, and normalization</p>
             <p class="pub-meta">Joint with Kensei Nakamura · <em>Theoretical Economics</em> · <span style="color:var(--accent);font-weight:500">R&amp;R</span></p>
-            <div class="links"><a href="https://doi.org/10.48550/arXiv.2505.03232">Working Paper</a></div>
+            <div class="links"><a href="https://doi.org/10.48550/arXiv.2505.03232">Working Paper</a><a href="https://hit-u.repo.nii.ac.jp/records/2061608">discussion paper</a></div>
             <details class="abstract">
               <summary>Abstract</summary>
               <p class="abstract-body">This paper studies preference aggregation under uncertainty in the multi-profile framework and characterizes a new class of aggregation rules that address classical concerns about Harsanyi’s (1955) utilitarian rules. Our aggregation rules, which we call <em>relative fair aggregation rules</em>, are grounded in three key ideas: utilitarianism, egalitarianism, and the 0–1 normalization of individual utilities. These rules are parameterized by a set of weight vectors over individuals and evaluate each ambiguous alternative by taking the minimum weighted sum of 0–1 normalized utility levels over the weight set. For the characterization, we propose two novel axioms—<em>weak preference for mixing</em> and <em>restricted certainty independence</em>—developed by using a new method of objectively randomizing outcomes within the Savagean setting. Additional results clarify how these axioms capture the utilitarian and egalitarian attitudes of the rules.</p>
@@ -555,5 +564,7 @@
 </div>
 
 <script src="assets/js/main.js" defer></script>
+<script src="assets/js/news-data.js"></script>
+<script src="assets/js/news.js"></script>
 </body>
 </html>
