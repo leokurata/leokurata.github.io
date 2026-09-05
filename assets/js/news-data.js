@@ -11,6 +11,12 @@
    ========================================================================= */
 window.NEWS = [
   {
+    date: "2026/8/25–27",
+    year: "2026",
+    en: 'I will make a presentation of “Inequality Averse Preferences: Generalization and Axiomatization” at AGT2026.',
+    ja: '「Inequality Averse Preferences: Generalization and Axiomatization」について AGT2026 にて発表します。'
+  },
+  {
     date: "2026/6/11–12",
     year: "2026",
     en: 'My coauthor, Kensei Nakamura, will make a presentation of “Reservation of Judgement and Robust Collective Decisions” at <a href="https://glecs.hias.hit-u.ac.jp/en/event/hsi2026/">Hitotsubashi Summer Institute</a>.',
