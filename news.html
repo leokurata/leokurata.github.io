@@ -3,30 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add("js")</script>
 
-<title>News archive — Leo Kurata</title>
-<meta name="description" content="Archived news and updates from Leo Kurata.">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7NZNYGT5GE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-7NZNYGT5GE');
+</script>
+
+<title>News — Leo Kurata</title>
+<meta name="description" content="News and updates from Leo Kurata.">
 <link rel="canonical" href="https://leokurata.github.io/news.html">
+<link rel="alternate" hreflang="en" href="https://leokurata.github.io/news.html">
+<link rel="alternate" hreflang="ja" href="https://leokurata.github.io/ja/news.html">
+<link rel="alternate" hreflang="x-default" href="https://leokurata.github.io/news.html">
 
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
-<meta name="theme-color" content="#FAFAF7">
+<meta name="theme-color" content="#E6D6B4">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-<main class="subpage">
-  <p class="back"><a href="index.html#news">← Home</a></p>
-  <h1>News archive</h1>
+<a class="skip" href="#content">Skip to content</a>
 
-  <!-- Filled automatically from assets/js/news-data.js — no need to edit here. -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html">Leo Kurata</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="presentations.html">Presentations</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="education.html">Education</a>
+      <a href="news.html" aria-current="page">News</a>
+    </nav>
+    <p class="lang-switch"><strong>EN</strong> / <a href="ja/news.html" hreflang="ja" lang="ja">日本語</a></p>
+  </div>
+</header>
+
+<main id="content" class="wrap page">
+
+  <header class="page-head">
+    <h1 class="page-title">News</h1>
+  </header>
+
+  <!-- Filled from assets/js/news-data.js — edit that file, not this one. -->
   <div id="news-archive"></div>
+
 </main>
 
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span data-year>2026</span> Leo Kurata</p>
+    <p>Graduate School of Economics, Waseda University</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
 <script src="assets/js/news-data.js"></script>
 <script src="assets/js/news.js"></script>
 </body>

@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add("js")</script>
 
 <!-- Google Search Console verification -->
 <meta name="google-site-verification" content="i_mi_OUVb7PXJZAytMpkNx2JMF3xm53x3Xf3aZRwWzE" />
@@ -13,26 +14,17 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-7NZNYGT5GE');
 </script>
 
-<!-- ============================================================
-     SEO  —  EDIT the values below for your own details.
-     Replace every occurrence of  your-username.github.io  with your
-     real GitHub Pages URL (or custom domain), e.g. yourname.com
-     ============================================================ -->
-<title>Leo Kurata — personal page </title>
+<title>Leo Kurata — personal page</title>
 <meta name="description" content="Leo Kurata is a PhD candidate in Economics at Waseda University, working on social choice theory and philosophy of economics.">
 <meta name="author" content="Leo Kurata">
 <link rel="canonical" href="https://leokurata.github.io/">
-
-<!-- language alternates (English ⇄ 日本語) -->
 <link rel="alternate" hreflang="en" href="https://leokurata.github.io/">
 <link rel="alternate" hreflang="ja" href="https://leokurata.github.io/ja/">
 <link rel="alternate" hreflang="x-default" href="https://leokurata.github.io/">
 
-<!-- Open Graph -->
 <meta property="og:type" content="profile">
 <meta property="og:locale" content="en_GB">
 <meta property="og:locale:alternate" content="ja_JP">
@@ -40,22 +32,13 @@
 <meta property="og:title" content="Leo Kurata — personal page">
 <meta property="og:description" content="Leo Kurata is a PhD candidate in Economics at Waseda University, working on social choice theory and philosophy of economics.">
 <meta property="og:url" content="https://leokurata.github.io/">
-<meta property="og:image" content="https://leokurata.github.io/assets/img/profile.svg">
-
-<!-- Twitter / X -->
+<meta property="og:image" content="https://leokurata.github.io/assets/img/profile.jpg">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Leo Kurata — personal page">
-<meta name="twitter:description" content="Leo Kurata is a PhD candidate in Economics at Waseda University, working on social choice theory and philosophy of economics.">
-<meta name="twitter:image" content="https://leokurata.github.io/assets/img/profile.svg">
 
-<!-- icons / manifest -->
 <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
 <link rel="manifest" href="site.webmanifest">
-<meta name="theme-color" content="#FAFAF7">
+<meta name="theme-color" content="#E6D6B4">
 
-<!-- Structured data: tells Google "this page is a person".
-     Fill in sameAs with your real profile links — this is what powers
-     the knowledge-panel / rich results for Leo Kurata. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -63,7 +46,7 @@
   "name": "Leo Kurata",
   "alternateName": "倉田怜於",
   "url": "https://leokurata.github.io/",
-  "image": "https://leokurata.github.io/assets/img/profile.svg",
+  "image": "https://leokurata.github.io/assets/img/profile.jpg",
   "jobTitle": "Doctoral Researcher",
   "affiliation": { "@type": "Organization", "name": "Waseda University" },
   "alumniOf": [
@@ -77,514 +60,97 @@
 }
 </script>
 
-<!-- fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;1,400&family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
-
-<!-- MathJax: write LaTeX anywhere on the page.
-     Inline:  \( ... \)  or  $ ... $        Display:  \[ ... \]  or  $$ ... $$  -->
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [["\\(", "\\)"], ["$", "$"]],
-      displayMath: [["\\[", "\\]"], ["$$", "$$"]]
-    },
-    options: { skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"] }
-  };
-</script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script>
 </head>
 
-<body>
-<a class="skip" href="#about">Skip to content</a>
+<body class="is-home">
+<a class="skip" href="#content">Skip to content</a>
 
-<!-- mobile-only top navigation -->
-<div class="topbar">
-  <nav aria-label="Sections">
-    <a href="#about">About</a>
-    <a href="#news">News</a>
-    <a href="#research">Research</a>
-    <a href="#publications">Publications</a>
-    <a href="#working">Working&nbsp;papers</a>
-    <a href="#presentations">Presentations</a>
-    <a href="#teaching">Teaching</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Information</a>
-  </nav>
-</div>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html">Leo Kurata</a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="research.html">Research</a>
+      <a href="presentations.html">Presentations</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="education.html">Education</a>
+      <a href="news.html">News</a>
+    </nav>
+    <p class="lang-switch"><strong>EN</strong> / <a href="ja/" hreflang="ja" lang="ja">日本語</a></p>
+  </div>
+</header>
 
-<div class="wrap">
+<main id="content" class="wrap home">
 
-  <!-- ======================= LEFT RAIL ======================= -->
-  <header class="rail">
-    <img class="portrait" src="assets/img/profile.svg" alt="Portrait of Leo Kurata" width="116" height="116">
+  <section class="intro" id="about">
+    <!-- Portrait: assets/img/profile.jpg — a light sRGB copy of the original profile.png (an iPhone HDR file). 6:7 is shown uncropped. -->
+    <figure class="portrait">
+      <img src="assets/img/profile.jpg" alt="Portrait of Leo Kurata" width="720" height="840">
+    </figure>
 
     <div>
-      <h1 class="rail-name"><a href="index.html">Leo Kurata</a></h1>
-      <p class="rail-role">
-        Doctoral Researcher<br>
-        <span>Dept. of Economics</span><br>
-        <span>Waseda University</span>
+      <h1 class="name">Leo Kurata <span class="name-alt" lang="ja">倉田 怜於</span></h1>
+      <p class="position">
+        Doctoral Researcher, Department of Economics, Waseda University<br>
+        JSPS Research Fellow (DC1), 2025–
       </p>
-    </div>
 
-    <p class="rail-email">leo.kurata.ac [at] gmail.com</p>
-
-    <nav class="nav" aria-label="On this page">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#working">Working papers</a></li>
-        <li><a href="#presentations">Presentations</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Information</a></li>
-      </ul>
-    </nav>
-
-    <div class="rail-foot">
-      <!-- EDIT your profile links. Remove any you don't use. -->
-      <div class="social">
-        <a href="https://scholar.google.com/citations?user=sTJPGb0AAAAJ">Google Scholar</a>
-        <a href="https://orcid.org/0009-0009-4028-8647">ORCID</a>
-        <a href="assets/cv.pdf">CV&nbsp;(PDF)</a>
-      </div>
-
-      <p class="lang"><strong>EN</strong> &nbsp;/&nbsp; <a href="ja/">日本語</a></p>
-
-      <p class="copyright">© <span data-year>2026</span> Leo Kurata</p>
-    </div>
-  </header>
-
-  <!-- ======================= MAIN ======================= -->
-  <main class="main" id="top">
-
-    <!-- ABOUT -->
-    <section id="about" class="reveal">
-      <p class="eyebrow">About</p>
-      <p class="lede">I am a PhD candidate working mainly on <em>Social choice theory</em>.</p>
-      <p class="lede-note">JSPS Research Fellow (DC1), 2025–</p>
-      <div class="prose">
+      <div class="bio">
+        <p>I am a PhD candidate working mainly on social choice theory.</p>
         <p>
           My research focuses on social choice theory, decision theory, and philosophy of economics.
           I've become interested in how the traditional frameworks ought to be rebuilt for a world
           shaped by risk, uncertainty, and AI.
         </p>
-        <!-- <p>
-          Before joining Waseda University, I studied at [previous institution],
-          where I worked on [topic]. 
-          My work has been supported by
-          [funding / fellowship], and I have presented at [venue].
-        </p> -->
       </div>
-    </section>
 
-    <!-- NEWS -->
-    <section id="news" class="reveal">
-      <p class="eyebrow">News</p>
+      <dl class="facts">
+        <dt>Fields</dt>
+        <dd>Social choice theory, philosophy of economics</dd>
+        <dt>Email</dt>
+        <dd>leo.kurata.ac [at] gmail.com</dd>
+      </dl>
+
+      <p class="profiles">
+        <a class="btn" href="assets/cv.pdf">CV (PDF)</a>
+        <a class="btn" href="https://scholar.google.com/citations?user=sTJPGb0AAAAJ">Google Scholar</a>
+        <a class="btn" href="https://orcid.org/0009-0009-4028-8647">ORCID</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="block dated" id="news">
+    <h2 class="block-title">News</h2>
+    <div class="block-body">
       <div id="news-latest"></div>
-      <p class="more"><a href="news.html">Archive →</a></p>
-    </section>
+      <a class="more-link" href="news.html">All news</a>
+    </div>
+  </section>
 
-    <!-- RESEARCH -->
-    <section id="research" class="reveal">
-      <p class="eyebrow">Research</p>
-      <h2 class="h">Interests</h2>
-      <div class="prose">
-        <p>
-          My research sits at the intersection of Economics and Philosophy.
-          I am particularly interested in social welfare/decision criteria, and in how
-          Arrovian/Harsanyian/Rawlsian framework can illuminate it mathematically and philosophically.
-        </p>
-      </div>
+  <section class="block quiet" id="contact">
+    <h2 class="block-title">Information</h2>
+    <div class="block-body">
+      <dl class="small-facts">
+        <dt>Address</dt>
+        <dd>1-6-1 Nishi-Waseda, Shinjuku-ku, Tokyo 169-8050, Japan</dd>
+        <dt>Languages</dt>
+        <dd>Japanese (native), English (proficient)</dd>
+      </dl>
+    </div>
+  </section>
 
-      <div class="tags">
-        <span class="tag">preference aggregation</span>
-        <span class="tag">social welfare criterion</span>
-        <span class="tag">distributive justice</span>
-        <span class="tag">axiomatic approach</span>
-      </div>
+</main>
 
-      <h3 class="sub">Working in progress</h3>
-      <div class="prose">
-        <p>Inequality Averse Preferences: Generalization and Axiomatization – Joint with Daijiro Kawanaka</p>
-        <p>Equality of Opportunity with Stability: Redistribution Mechanisms in Superadditive Societies – Joint with Leo Goto and Wataru Kitano</p>
-        <p>Classification Aggregation with Multiple Memberships – Joint with Federico Fioravanti and Vasileios Stamatis</p>
-      </div>
-
-      <!-- Current project — hidden for now, kept for future use
-      <h3 class="sub">Current project</h3>
-      <div class="prose">
-        <p>
-          [A short paragraph describing your main project. You can include
-          mathematics freely — for example, the estimand of interest is
-          \( \tau = \mathbb{E}[Y(1) - Y(0)] \), which I identify under the
-          assumption below.]
-        </p>
-        <p style="text-align:center">
-          \[ \hat{\tau} \;=\; \frac{1}{n}\sum_{i=1}^{n}\left( \frac{T_i Y_i}{\hat{e}(X_i)} - \frac{(1-T_i)Y_i}{1-\hat{e}(X_i)} \right) \]
-        </p>
-        <p>
-          [Explain the result in one or two sentences. Delete the equations
-          above if your field does not use them.]
-        </p>
-      </div>
-      -->
-    </section>
-
-    <!-- PUBLICATIONS -->
-    <section id="publications" class="reveal">
-      <p class="eyebrow">Publications</p>
-      <ol class="pub-list">
-
-        <li class="pub">
-          <div class="pub-year">2026</div>
-          <div>
-            <p class="pub-title">A single-axiom cardinal characterisation of quadratic utility</p>
-            <p class="pub-meta"><em>Economics Letters</em>, 2026.</p>
-            <div class="links"><a href="https://www.sciencedirect.com/science/article/pii/S0165176526003757">Journal</a><a href="http://dx.doi.org/10.2139/ssrn.6999287">Working Paper</a></div>
-            <details class="abstract">
-              <summary>Abstract</summary>
-              <p class="abstract-body">Chambers and Echenique (in J Econ Theory 189:105086, 2020) characterised quadratic(-plus-linear) social welfare functions using Status Quo Independence and Eventual Linearity. We show that Status Quo Independence implies the latter condition at every status quo, making it redundant. Under continuity and normalisation, Status Quo Independence solely yields a unique quadratic-plus-linear decomposition: The proof separates the even and odd parts of the social welfare function into the parallelogram equation and Jensen's equation. Eventual Linearity alone is insufficient because it leaves the even component unrestricted.</p>
-            </details>
-            <details class="abstract">
-              <summary>Appendix</summary>
-              <p class="abstract-body">Every even function $U:\mathbb{R}^n\to\mathbb{R}$ automatically satisfies EL. Indeed, if $U$ is even, then $\delta_{\mathbf{0}}(x)=U(x)-U(-x)=0$ for every $x\in\mathbb{R}^n$, so the EL-additivity holds at $w=\mathbf{0}$ for every pair $x,y\in\mathbb{R}^n$. Thus, EL imposes no restriction within the class of even functions.</p>
-            </details>
-          </div>
-        </li>
-
-        <!-- <li class="pub">
-          <div class="pub-year">2025</div>
-          <div>
-            <p class="pub-title">Title of the Published Article Goes Here</p>
-            <p class="pub-meta">with Co-author A · <em>Journal Name</em>, 12(3), pp.&nbsp;345–367.</p>
-            <div class="links">
-              <a href="#">PDF</a>
-              <a href="#">Journal</a>
-              <a href="#">Slides</a>
-              <a href="#">BibTeX</a>
-            </div>
-            <details class="abstract">
-              <summary>Abstract</summary>
-              <p class="abstract-body">
-                [Paste the abstract here. A clear, self-contained summary helps
-                both readers and search engines understand the contribution.]
-              </p>
-            </details>
-          </div>
-        </li>
-
-        <li class="pub">
-          <div class="pub-year">2024</div>
-          <div>
-            <p class="pub-title">Another Article, Perhaps Forthcoming</p>
-            <p class="pub-meta"><em>Conference / Journal Name</em> (forthcoming).</p>
-            <div class="links">
-              <a href="#">PDF</a>
-              <a href="#">DOI</a>
-            </div>
-            <details class="abstract">
-              <summary>Abstract</summary>
-              <p class="abstract-body">[Abstract text.]</p>
-            </details>
-          </div>
-        </li> -->
-
-      </ol>
-    </section>
-
-    <!-- WORKING PAPERS -->
-    <section id="working" class="reveal">
-      <p class="eyebrow">Working papers</p>
-      <ol class="pub-list">
-
-        <li class="pub">
-          <div class="pub-year">2025</div>
-          <div>
-            <p class="pub-title">Collective decisions under uncertainty: efficiency, ex-ante fairness, and normalization</p>
-            <p class="pub-meta">Joint with Kensei Nakamura · <span style="color:var(--accent);font-weight:500">Conditionally Accepted</span> at <em>Theoretical Economics</em></p>
-            <div class="links"><a href="https://doi.org/10.48550/arXiv.2505.03232">Working Paper</a><a href="https://hit-u.repo.nii.ac.jp/records/2061608">discussion paper</a></div>
-            <details class="abstract">
-              <summary>Abstract</summary>
-              <p class="abstract-body">This paper studies preference aggregation under uncertainty in the multi-profile framework and characterizes a new class of aggregation rules that address classical concerns about Harsanyi’s (1955) utilitarian rules. Our aggregation rules, which we call <em>relative fair aggregation rules</em>, are grounded in three key ideas: utilitarianism, egalitarianism, and the 0–1 normalization of individual utilities. These rules are parameterized by a set of weight vectors over individuals and evaluate each ambiguous alternative by taking the minimum weighted sum of 0–1 normalized utility levels over the weight set. For the characterization, we propose two novel axioms—<em>weak preference for mixing</em> and <em>restricted certainty independence</em>—developed by using a new method of objectively randomizing outcomes within the Savagean setting. Additional results clarify how these axioms capture the utilitarian and egalitarian attitudes of the rules.</p>
-            </details>
-          </div>
-        </li>
-
-        <li class="pub">
-          <div class="pub-year">2026</div>
-          <div>
-            <p class="pub-title">Reservation of Judgment and Robust Collective Decisions</p>
-            <p class="pub-meta">Joint with Kensei Nakamura · <span style="color:var(--accent);font-weight:500">Under review</span></p>
-            <div class="links"><a href="https://doi.org/10.48550/arXiv.2512.16240">Working Paper</a></div>
-            <details class="abstract">
-              <summary>Abstract</summary>
-              <p class="abstract-body">This paper studies preference aggregation under ambiguity when agents have incomplete preference relations due to imprecise beliefs. We introduce the “dual” of the Pareto principle, which respects unanimity among individuals, including those with unexpressed opinions. Our first theorem shows that, in most cases, this principle leads to a dictatorial rule in taste aggregation. We argue that this stems from the problem of spurious unanimity, even when the individuals have the same prior set. By weakening the above principle to avoid respecting spurious unanimity, the second theorem characterizes novel belief-aggregation rules, under which society does not discard any combination of plausible priors.</p>
-            </details>
-          </div>
-        </li>
-
-        <li class="pub">
-          <div class="pub-year">2026</div>
-          <div>
-            <p class="pub-title">Agreement with reservation of judgment under risk</p>
-            <p class="pub-meta">Joint with Kensei Nakamura</p>
-            <div class="links"><a href="https://doi.org/10.48550/arXiv.2601.01334">Working Paper</a></div>
-            <details class="abstract">
-              <summary>Abstract</summary>
-              <p class="abstract-body">This paper studies preference aggregation under risk. In our model, each agent has an incomplete preference relation represented by a set of expected utility functions. The classical Pareto principle is silent on agreement involving indecisiveness. To examine the implications of respecting such agreement, we introduce the Paretian principle that can be applied when some individuals reserve their judgment. Our main result shows that, under this principle, for each combination of individuals’ utility functions, there exists a corresponding social utility function constructed as a weighted sum of the individual ones. These aggregation rules guarantee natural properties that the standard Pareto principle fails to ensure.</p>
-            </details>
-          </div>
-        </li>
-                
-        <li class="pub">
-          <div class="pub-year">2026</div>
-          <div>
-            <p class="pub-title">Closedness is sufficient for expected multi-utility representations</p>
-            <div class="links"><a href="https://drive.google.com/file/d/1m40V2MPooL6GkpFLT8xTGVBSXiuQxVs0/view?usp=share_link">Working Paper</a></div>
-            <details class="abstract">
-              <summary>Abstract</summary>
-              <p class="abstract-body">We prove that a mixture preorder on any mixture space admits a mixture-preserving multi-representation if and only if its graph is closed in the weak topology generated by all real-valued mixture-preserving functions. This answers the question left open by McCarthy, Mikkola, and Thomas (2021). Leonetti (2025, Theorem 2.6) states the corresponding result for simple lotteries, but his proof relies on an incorrect assertion about weakly convergent nets. We refute this assertion for every infinite outcome set using a net of lotteries, each supported on at most two points. We provide a valid proof using the finest locally convex topology as an auxiliary tool, while retaining the original weak closedness assumption. The result for simple lotteries then yields the corresponding representation theorem on arbitrary mixture spaces.</p>
-            </details>
-          </div>
-        </li>
-
-        <!-- <li class="pub">
-          <div class="pub-year"></div>
-          <div>
-            <p class="pub-title">Inequality Averse Preferences: Generalization and a New Axiomatization</p>
-            <p class="pub-meta">Joint with Daijiro Kawanaka</p>
-          </div>
-        </li> -->
-
-      </ol>
-    </section>
-
-    <!-- PRESENTATIONS -->
-    <section id="presentations" class="reveal">
-      <p class="eyebrow">Presentations</p>
-
-      <h3 class="sub">2026</h3>
-      <div class="edu">
-        <div class="edu-date">6/5 – 7</div>
-        <div>
-          <p class="edu-deg">2nd International Conference on Normative Economics and Philosophy</p>
-          <p class="edu-note">Tokyo University of Science, JP</p>
-          <p class="edu-paper"><em>Revisiting Quadratic Social Welfare Functions: a new reconciliation between equity and efficiency</em></p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">6/13 – 16</div>
-        <div>
-          <p class="edu-deg">The 18th Meeting of the Society for Social Choice and Welfare</p>
-          <p class="edu-note">Tokyo, JP · Accepted</p>
-          <p class="edu-paper"><em>Revisiting Quadratic Social Welfare Functions: a new reconciliation between equity and efficiency</em></p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">8/25 – 27</div>
-        <div>
-          <p class="edu-deg">Asian Game Theory Conference 2026</p>
-          <p class="edu-note">Tokyo, JP · Accepted</p>
-          <p class="edu-paper"><em>Inequality Averse Preferences: Generalization and Axiomatization</em></p>
-        </div>
-      </div>
-
-      <h3 class="sub">2025</h3>
-      <div class="edu">
-        <div class="edu-date">5/24 – 25</div>
-        <div>
-          <p class="edu-deg">Japanese Economic Association 2025 Spring Meeting</p>
-          <p class="edu-note">Chukyo University, JP · Poster</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">5/31 – 6/2</div>
-        <div>
-          <p class="edu-deg">1st International Conference on Normative Economics and Philosophy</p>
-          <p class="edu-note">Tokyo University of Science, JP</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">6/23 – 25</div>
-        <div>
-          <p class="edu-deg">Conference on Economic Design 2025</p>
-          <p class="edu-note">University of Essex, GB</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">7/22</div>
-        <div>
-          <p class="edu-deg">WINPEC Microeconomics Seminar</p>
-          <p class="edu-note">Waseda University, JP</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">8/18 – 22</div>
-        <div>
-          <p class="edu-deg">Econometric Society World Congress 2025</p>
-          <p class="edu-note">Seoul, KR</p>
-        </div>
-      </div>
-
-      <h3 class="sub">2024</h3>
-      <div class="edu">
-        <div class="edu-date">7/2 – 6</div>
-        <div>
-          <p class="edu-deg">The 17th Meeting of the Society for Social Choice and Welfare</p>
-          <p class="edu-note">Paris, FR</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">7/8 – 11</div>
-        <div>
-          <p class="edu-deg">Conference for Mechanism and Institution Design</p>
-          <p class="edu-note">Corvinus University, HU</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">8/26 – 30</div>
-        <div>
-          <p class="edu-deg">East Asia Game Theory</p>
-          <p class="edu-note">Jeju, KR</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- TEACHING -->
-    <section id="teaching" class="reveal">
-      <p class="eyebrow">Teaching</p>
-
-      <h3 class="sub">TA Sessions</h3>
-      <div class="edu">
-        <div class="edu-date">2026/4 – 6</div>
-        <div>
-          <p class="edu-deg">Intermediate Microeconomics II</p>
-          <p class="edu-note">International Christian University</p>
-        </div>
-      </div>
-
-      <h3 class="sub">Teaching Assistant</h3>
-      <div class="edu">
-        <div class="edu-date">2021/4 – 7</div>
-        <div>
-          <p class="edu-deg">Seminar in Comparative Political Economy</p>
-          <p class="edu-note">Waseda University, School of Political Science and Economics</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">2022/4 – 7</div>
-        <div>
-          <p class="edu-deg">Public Economics</p>
-          <p class="edu-note">Waseda University, School of Political Science and Economics</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">2022/4 – 7</div>
-        <div>
-          <p class="edu-deg">Industrial Organization</p>
-          <p class="edu-note">Waseda University, School of Political Science and Economics</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">2023/4 – 7</div>
-        <div>
-          <p class="edu-deg">Industrial Organization</p>
-          <p class="edu-note">Waseda University, School of Political Science and Economics</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">2023/4 – 7</div>
-        <div>
-          <p class="edu-deg">Population Economics</p>
-          <p class="edu-note">Waseda University, School of Political Science and Economics</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">2024/10 – 2025/1</div>
-        <div>
-          <p class="edu-deg">Economic Policy</p>
-          <p class="edu-note">Waseda University, School of Political Science and Economics</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">2025/4 – 6</div>
-        <div>
-          <p class="edu-deg">Public Philosophy (Economic Perspective) in English</p>
-          <p class="edu-note">Waseda University, School of Political Science and Economics</p>
-        </div>
-      </div>
-
-      <h3 class="sub">Research Assistant</h3>
-      <div class="edu">
-        <div class="edu-date">2022/2 – present</div>
-        <div>
-          <p class="edu-deg"><a href="https://utecon.net/en/">UTokyo Economic Consulting Inc. (UTEcon)</a></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education" class="reveal">
-      <p class="eyebrow">Education</p>
-      <div class="edu">
-        <div class="edu-date">2024/9 – present</div>
-        <div>
-          <p class="edu-deg">PhD Programme in Economics</p>
-          <p class="edu-note">Graduate School of Economics, Waseda University. Supervised by Tsuyoshi Adachi.</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">2022/4 – 2024/9</div>
-        <div>
-          <p class="edu-deg">MA in Economics, Waseda University</p>
-          <p class="edu-note">Exchange at Tilburg University 🇳🇱 and Monash University 🇦🇺.</p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date"></div>
-        <div>
-          <p class="edu-deg">QTEM (Quantitative Techniques for Economics and Management) Degree <a href="https://www.qtem.org/student/qtem-masters-program/">Details</a></p>
-        </div>
-      </div>
-      <div class="edu">
-        <div class="edu-date">2018/4 – 2022/3</div>
-        <div>
-          <p class="edu-deg">BA in Political Science, Waseda University</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="reveal">
-      <p class="eyebrow">Information</p>
-      <div class="contact-grid">
-        <div>
-          <p class="k">Address</p>
-          <p class="v">1-6-1 Nishi-Waseda, Shinjuku-ku, Tokyo, Japan, 169-8050</p>
-        </div>
-        <div>
-          <p class="k">Language</p>
-          <p class="v">Japanese (native), English (proficient)</p>
-        </div>
-        <div>
-          <p class="k">Elsewhere</p>
-          <p class="v">
-            <a href="https://scholar.google.com/citations?user=sTJPGb0AAAAJ">Google&nbsp;Scholar</a> ·
-            <a href="https://orcid.org/0009-0009-4028-8647">ORCID</a>
-          </p>
-        </div>
-      </div>
-    </section>
-
-  </main>
-</div>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p>© <span data-year>2026</span> Leo Kurata</p>
+    <p>Graduate School of Economics, Waseda University</p>
+  </div>
+</footer>
 
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/news-data.js"></script>

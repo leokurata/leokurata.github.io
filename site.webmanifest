@@ -3,8 +3,8 @@
   "short_name": "Your Name",
   "start_url": ".",
   "display": "browser",
-  "background_color": "#FAFAF7",
-  "theme_color": "#FAFAF7",
+  "background_color": "#E6D6B4",
+  "theme_color": "#E6D6B4",
   "icons": [
     { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
   ]

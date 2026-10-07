@@ -9,20 +9,33 @@ GitHub Pages にそのまま公開でき、SEO・構造化データ・LaTeX 数�
 
 ```
 homepage/
-├── index.html            ← 英語ページ（メイン）
-├── ja/
-│   └── index.html        ← 日本語ページ
+├── index.html            ← Home（基本情報・最新のお知らせ1件）
+├── research.html         ← Research（研究関心・出版論文・WP・進行中の研究）
+├── presentations.html    ← Presentations（発表）
+├── teaching.html         ← Teaching（TA・RA）
+├── education.html        ← Education（学歴）
+├── news.html             ← News（お知らせ一覧）
+├── ja/                   ← 上と同じ6ページの日本語版（ファイル名も同じ）
 ├── assets/
 │   ├── css/style.css     ← デザイン（色・フォントはここで変更）
-│   ├── js/main.js        ← ナビ強調・表示アニメ（無くても動作）
+│   ├── js/main.js        ← 年表示・旧URL（/#publications など）の転送
+│   ├── js/news-data.js   ← お知らせのデータ（ここだけ編集すればよい）
+│   ├── js/news.js        ← お知らせの表示
+│   ├── cv.pdf
 │   └── img/
 │       ├── favicon.svg   ← タブのアイコン
-│       └── profile.svg   ← 顔写真のプレースホルダ
+│       ├── profile.png   ← 顔写真の元ファイル（iPhone の HDR 写真、7MB）
+│       ├── profile.jpg   ← サイトで表示する軽量版（sRGB、幅720px）
+│       └── profile.svg   ← 写真が無いときのプレースホルダ（現在は未使用）
 ├── robots.txt            ← 検索エンジン向け
-├── sitemap.xml           ← サイトマップ
+├── sitemap.xml           ← サイトマップ（ページを増やしたら追記）
 ├── site.webmanifest      ← PWA メタ情報
 └── .nojekyll             ← GitHub の余計な処理を無効化
 ```
+
+各ページの上部メニュー（`<nav class="site-nav">`）は全ページに同じものが書かれています。
+タブを増やす・名前を変えるときは、英語6ページ・日本語6ページすべてのメニューを揃えて直してください。
+いま開いているページのタブには `aria-current="page"` を付けます（下線が付きます）。
 
 ---
 
@@ -43,9 +56,15 @@ homepage/
 
 そのほか、本文中の `[ ... ]` / `［ ... ］` で囲まれた部分はすべて差し替え用のプレースホルダです。
 
-**顔写真**: `assets/img/` に `profile.jpg`（正方形・推奨 600×600px 以上）を置き、
-両 HTML の `src="assets/img/profile.svg"`（日本語版は `../assets/img/profile.svg`）を
-`profile.jpg` に変更してください。
+**顔写真**: サイトが表示するのは `assets/img/profile.jpg`（英語版・日本語版のホーム共通）です。
+写真を替えるときは、元画像を通常の画面向け（sRGB）の JPEG に変換して `profile.jpg` を置き換えてください。
+iPhone の HDR 写真をそのまま使うと、ブラウザでは白っぽく眠い色になります。Mac なら次のコマンドで変換できます。
+
+```bash
+sips -m "/System/Library/ColorSync/Profiles/sRGB Profile.icc" -s format jpeg -s formatOptions 78 -Z 840 assets/img/profile.png --out assets/img/profile.jpg
+```
+
+縦横比 6:7 の枠に表示されます（比率が違う写真は、やや上寄りを中心に切り抜かれます）。
 
 **CV**: PDF を `assets/cv.pdf` として置くと、`CV (PDF)` リンクから開けます。
 
@@ -111,7 +130,7 @@ MathJax を組み込んであるので、HTML 本文にそのまま LaTeX を書
 
 ## 6. 言語の切り替え
 
-各ページ左下（モバイルでは上部）の `EN / 日本語` で相互に移動します。
+各ページ右上の `EN / 日本語` で、同じ内容の別言語ページへ移動します。
 英語版が「正本」、日本語版が訳という関係で `hreflang` を設定しているため、
 検索エンジンは閲覧者の言語に応じて適切な版を表示します。
 
@@ -136,7 +155,10 @@ python3 -m http.server 8000
 
 - `--accent`：アクセント色（既定は深いティール `#1C5C53`）
 - `--paper`：背景色　`--ink`：本文色
-- `--serif` / `--sans` / `--mono`：フォント指定
+- `--serif`：氏名・見出し・論文タイトルの Garamond／明朝（EB Garamond / しっぽり明朝）
+- `--sans`：本文・メニューのゴシック体（Source Sans 3 / Zen Kaku Gothic New）
+- `--paper`：羊皮紙調の背景色（`#ECE5D6`）
+- `--label`：左側の見出し列の幅（全ページ共通）
 
 フォントを変更する場合は、各 HTML の `<head>` 内 Google Fonts の `<link>` も
 合わせて差し替えてください。
