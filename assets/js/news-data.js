@@ -11,6 +11,12 @@
    ========================================================================= */
 window.NEWS = [
   {
+    date: "2026/10/27",
+    year: "2026",
+    en: 'I will make a presentation of “Inequality Averse Preferences: Generalization and Axiomatization” at <a href="https://sites.google.com/view/2021onlinescwseminars/upcoming-seminars#h.k5xcaeliagyq">Online Social Choice and Welfare Seminar</a>.',
+    ja: '「Inequality Averse Preferences: Generalization and Axiomatization」について <a href="https://sites.google.com/view/2021onlinescwseminars/upcoming-seminars#h.k5xcaeliagyq">Online Social Choice and Welfare Seminar</a> にて発表します。'
+  },
+  {
     date: "2026/8/25–27",
     year: "2026",
     en: 'I will make a presentation of “Inequality Averse Preferences: Generalization and Axiomatization” at AGT2026.',
