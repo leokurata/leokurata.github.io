@@ -11,6 +11,12 @@
    ========================================================================= */
 window.NEWS = [
   {
+    date: "2026/11/12–13",
+    year: "2026",
+    en: 'I will make a presentation of “Classification Aggregation with Multiple Memberships” at the <a href="https://carmenbevia-sketch.github.io/Japan-Spain-meeting-2026/">10th Spain–Japan Meeting on Economic Theory</a>.',
+    ja: '「Classification Aggregation with Multiple Memberships」について <a href="https://carmenbevia-sketch.github.io/Japan-Spain-meeting-2026/">10th Spain–Japan Meeting on Economic Theory</a> にて発表します。'
+  },
+  {
     date: "2026/10/27",
     year: "2026",
     en: 'I will make a presentation of “Inequality Averse Preferences: Generalization and Axiomatization” at <a href="https://sites.google.com/view/2021onlinescwseminars/upcoming-seminars#h.k5xcaeliagyq">Online Social Choice and Welfare Seminar</a>.',
